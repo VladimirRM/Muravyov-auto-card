@@ -6,7 +6,7 @@ const generateAutoCards = (brand, model) => {
   </div>
   `;
 };
-const div = document.createElement("div");
+const carDiv = document.createElement("div");
 div.classList.add("auto");
 
 const body = document.querySelector("body");
