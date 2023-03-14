@@ -6,13 +6,15 @@ const generateAutoCards = (brand, model) => {
   </div>
   `;
 };
+const div = document.createElement("div");
+div.classList.add("auto");
 
-const listAuto = ()=>[
-{ brand: 'Toyota' ,model: 'Camry'},
-{ brand: 'Lexus' ,model: 'Es 350'}
-]
+ const body = 
+const listAuto = () => [
+  { brand: "Toyota", model: "Camry" },
+  { brand: "Lexus", model: "Es 350" },
+];
 
-
-const listHtml = listAuto.map(car =>{
-  return generateAutoCards(car.brand,car.model)
-})
+const listHtml = listAuto.map((car) => {
+  return generateAutoCards(car.brand, car.model);
+});
