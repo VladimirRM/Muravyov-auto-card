@@ -55,7 +55,7 @@
 //   const body = document.querySelector("body");
   
 //   body.appendChild(carDiv);
-//   const listAuto = () => [
+//   const listAuto = [
 //     { brand: "Toyota", model: "Camry" },
 //     { brand: "Lexus", model: "Es 350" },
 //   ];
