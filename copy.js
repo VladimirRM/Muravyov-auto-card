@@ -83,4 +83,4 @@ const handleClick = (e) => {
 buttons.forEach((button) => {
   button.addEventListener("click", handleClick);
 });
-console.log(carsList);
+console.log(buttons);
