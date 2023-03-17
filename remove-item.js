@@ -1,4 +1,7 @@
+const div = document.createElement("div");
+div.classList.add("wrapper");
 
+const body = document.body;
+body.appendChild(div);
 
-// div.innerHTML = ul;
-
+console.log(div);
