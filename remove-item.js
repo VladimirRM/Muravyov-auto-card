@@ -31,11 +31,10 @@ div.innerHTML = carsHtml;
 
 const handleClick = (e) => {
   const currentButton = e.currentTarget;
-  // currentButton.parentElement.remove();
-//   currentButton.closest(".one").remove();
-currentButton.removeChild('li')
+  currentButton.parentElement.remove();
+  //   currentButton.closest(".one").remove();
+  // currentButton.removeChild('li')
 };
-
 
 const buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
