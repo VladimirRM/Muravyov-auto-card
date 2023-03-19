@@ -1,5 +1,5 @@
 const div = document.createElement("div");
-div.classList.add("mainDiv");
+div.classList.add("wrapper");
 
 document.body.append(div);
 
