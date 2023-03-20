@@ -17,3 +17,8 @@ const generateAutoCard = (brand, model) => {
     </div>
     `;
 };
+
+const listAuto = [
+  { brand: "Toyota", model: "Camry" },
+  { brand: "Lexus", model: "Es 350" },
+];
