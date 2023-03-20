@@ -22,3 +22,9 @@ const listAuto = [
   { brand: "Toyota", model: "Camry" },
   { brand: "Lexus", model: "Es 350" },
 ];
+
+const carsHtml = listAuto.map((car) => {
+  return generateAutoCard(car.brand, car.model);
+});
+
+div.innerHTML = carsHtml;
