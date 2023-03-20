@@ -12,7 +12,7 @@ const generateAutoCard = (brand, model) => {
     <ul>
     <li>${brand}</li>
     <li>${model}</li>
-
+     <button class='btn'></button>
     </ul>
     </div>
     `;
@@ -28,3 +28,11 @@ const carsHtml = listAuto.map((car) => {
 });
 
 div.innerHTML = carsHtml;
+
+const buttons = document.querySelectorAll('btn')
+
+ removeHandler
+
+buttons.forEach((button)=>{
+  return button.addEventListener('click',removeHandler)
+})
