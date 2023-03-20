@@ -12,8 +12,8 @@ const generateAutoCard = (brand, model) => {
     <ul>
     <li>${brand}</li>
     <li>${model}</li>
-     <button class='btn'></button>
     </ul>
+    <button class='btn'>Delete</button>
     </div>
     `;
 };
@@ -29,10 +29,13 @@ const carsHtml = listAuto.map((car) => {
 
 div.innerHTML = carsHtml;
 
-const buttons = document.querySelectorAll('btn')
+const buttons = document.querySelectorAll(".btn");
 
- removeHandler
+const deleteHandler = (e) => {
+  const currentButton = e.currentTarget;
+  currentButton.parentElement.remove();
+};
 
-buttons.forEach((button)=>{
-  return button.addEventListener('click',removeHandler)
-})
+buttons.forEach((button) => {
+  button.addEventListener("click", deleteHandler);
+});
