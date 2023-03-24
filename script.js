@@ -31,6 +31,10 @@ const carsHtml = listAuto
 
 div.innerHTML = carsHtml;
 
+const handlerRemove = (e) => {
+  const currentButton = e.currentTarget;
+};
+
 const buttons = document.querySelectorAll("btn");
 
 buttons.forEach((button) => {
