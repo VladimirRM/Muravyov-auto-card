@@ -11,6 +11,7 @@ const generateAutoCard = (brand, model) => {
   <ul>
   <li>${brand}</li>
   <li>${model}</li>
+  <button class='btn'>Delete</button>
 </ul>
   </div>
   
