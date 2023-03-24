@@ -31,4 +31,10 @@ const carsHtml = listAuto
 
 div.innerHTML = carsHtml;
 
+const buttons = document.querySelectorAll("btn");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", handlerRemove);
+});
+
 console.log(carsHtml);
