@@ -5,14 +5,14 @@ const body = document.body;
 
 body.appendChild(div);
 
-const generateAutoCard = (brand,model)=>{
+const generateAutoCard = (brand, model) => {
   return `
   <div class='autoCard'>
   <ul>
-  <li></li>
-  <li></li>
-  </ul>
+  <li>${brand}</li>
+  <li>${model}</li>
+</ul>
   </div>
   
-  `
-}
+  `;
+};
