@@ -32,7 +32,6 @@ const carsHtml = listAuto
 div.innerHTML = carsHtml;
 
 const handlerRemove = (e) => {
-  console.log("click");
   const currentButton = e.currentTarget;
   currentButton.parentElement.remove();
 };
