@@ -21,3 +21,7 @@ const listAuto = [
   { brand: "Toyota", model: "Camry" },
   { brand: "Lexus", model: "Es 350" },
 ];
+
+const carsHtml = listAuto.forEach((car)=>{
+  return generateAutoCard(car.brand, car.model)
+}) 
