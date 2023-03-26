@@ -30,11 +30,14 @@ const carsHtml = listAuto
 
 div.innerHTML = carsHtml;
 
+const handleDelete = (e) => {
+  const currentButton = e.currentTarget;
+  currentButton.parentElement.remove();
+};
+
 const buttons = document.querySelectorAll(".btn");
-buttons.forEach((button)=>{
-  return button.addEventListener('click' ,handleDelete)
-})
-
-
+buttons.forEach((button) => {
+  return button.addEventListener("click", handleDelete);
+});
 
 console.log(buttons);
