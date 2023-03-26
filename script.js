@@ -5,16 +5,30 @@ const body = document.body;
 
 body.appendChild(div);
 
-console.log(div);
-
-const generateAutoCard =( brand,model)=>{
+const generateAutoCard = (brand, model) => {
   return `
   <div class='autoCard' >
   <ul>
   <li>${brand}</li>
   <li>${model}</li>
-
-  </ul>
+</ul>
   </div>
-  `
-}
+  `;
+};
+
+const listAuto = [
+  { brand: "Toyota", model: "Camry" },
+  { brand: "Lexus", model: "Es 350" },
+];
+
+const carsHtml = listAuto
+  .map((car) => {
+    return generateAutoCard(car.brand, car.model);
+  })
+  .join();
+
+div.innerHTML = carsHtml;
+
+
+const buttons = document.querySelectorAll('.btn')
+console.log(carsHtml);
